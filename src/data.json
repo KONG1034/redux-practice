@@ -1,0 +1,67 @@
+{
+    "Days": [
+        {
+            "id":1,
+            "Day":1
+        },
+        {
+            "id":2,
+            "Day":2
+        },
+        {
+            "id":3,
+            "Day":3
+        }
+    ],
+    "Words": [
+        {
+            "id":1,
+            "eng":"english",
+            "kor":"영어",
+            "day":1
+        },
+        {
+            "id":1,
+            "eng":"car",
+            "kor":"자동차",
+            "day":1
+        },
+        {
+            "id":1,
+            "eng":"tea",
+            "kor":"차",
+            "day":2
+        },
+        {
+            "id":1,
+            "eng":"room",
+            "kor":"방",
+            "day":3
+        },
+        {
+            "id":1,
+            "eng":"country",
+            "kor":"나라",
+            "day":2
+        },
+        {
+            "id":1,
+            "eng":"cook",
+            "kor":"요리하다",
+            "day":3
+        },
+        {
+            "id":1,
+            "eng":"drive",
+            "kor":"운전하다",
+            "day":3
+        },
+        {
+            "id":1,
+            "eng":"soldier",
+            "kor":"군인",
+            "day":1
+        }
+        
+    ]
+}
