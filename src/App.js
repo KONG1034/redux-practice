@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import WordList from './components/WordList';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header/>} />
+          <Route path="/:id" element={<WordList/>} />
         </Routes>
 
       </BrowserRouter>
