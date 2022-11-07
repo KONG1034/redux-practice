@@ -21,43 +21,43 @@
             "day":1
         },
         {
-            "id":1,
+            "id":2,
             "eng":"car",
             "kor":"자동차",
             "day":1
         },
         {
-            "id":1,
+            "id":3,
             "eng":"tea",
             "kor":"차",
             "day":2
         },
         {
-            "id":1,
+            "id":4,
             "eng":"room",
             "kor":"방",
             "day":3
         },
         {
-            "id":1,
+            "id":5,
             "eng":"country",
             "kor":"나라",
             "day":2
         },
         {
-            "id":1,
+            "id":6,
             "eng":"cook",
             "kor":"요리하다",
             "day":3
         },
         {
-            "id":1,
+            "id":7,
             "eng":"drive",
             "kor":"운전하다",
             "day":3
         },
         {
-            "id":1,
+            "id":8,
             "eng":"soldier",
             "kor":"군인",
             "day":1

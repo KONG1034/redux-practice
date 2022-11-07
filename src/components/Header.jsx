@@ -19,7 +19,7 @@ const Header = () => {
         <select onChange={selectDay}>
             {
                 days.map(day => (
-                    <option key={day.id} value={day.Day}>{day.Day}</option>
+                    <option key={day.id} defaultValue={1} value={day.Day}>{day.Day}</option>
                 ))
             }
         </select>

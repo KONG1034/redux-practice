@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header/>} />
-          <Route path="/:id" element={<WordList/>} />
+          <Route path="/:day" element={<WordList/>} />
         </Routes>
 
       </BrowserRouter>
