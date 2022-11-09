@@ -1,15 +1,11 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-const GetAllDays = (url) => {
+const useAllDay = (url) => {
     let [data, setData] = useState([]);
 
     useEffect(() => {
-        axios({
-            method:'get',
-            url: url,
-            baseURL: 'http://localhost:3001/'
-        })
+        axios.get('http://localhost:3001/days')
         .then(res => {
             return res.data;
         })
@@ -21,4 +17,4 @@ const GetAllDays = (url) => {
     return data;
 }
 
-export default GetAllDays;
+export default useAllDay;

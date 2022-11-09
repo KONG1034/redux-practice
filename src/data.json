@@ -1,67 +1,106 @@
 {
-    "Days": [
-        {
-            "id":1,
-            "Day":1
-        },
-        {
-            "id":2,
-            "Day":2
-        },
-        {
-            "id":3,
-            "Day":3
-        }
-    ],
-    "Words": [
-        {
-            "id":1,
-            "eng":"english",
-            "kor":"영어",
-            "day":1
-        },
-        {
-            "id":2,
-            "eng":"car",
-            "kor":"자동차",
-            "day":1
-        },
-        {
-            "id":3,
-            "eng":"tea",
-            "kor":"차",
-            "day":2
-        },
-        {
-            "id":4,
-            "eng":"room",
-            "kor":"방",
-            "day":3
-        },
-        {
-            "id":5,
-            "eng":"country",
-            "kor":"나라",
-            "day":2
-        },
-        {
-            "id":6,
-            "eng":"cook",
-            "kor":"요리하다",
-            "day":3
-        },
-        {
-            "id":7,
-            "eng":"drive",
-            "kor":"운전하다",
-            "day":3
-        },
-        {
-            "id":8,
-            "eng":"soldier",
-            "kor":"군인",
-            "day":1
-        }
-        
-    ]
+  "Days": [
+    {
+      "id": 1,
+      "Day": 1
+    },
+    {
+      "id": 2,
+      "Day": 2
+    },
+    {
+      "id": 3,
+      "Day": 3
+    },
+    {
+      "id": 4,
+      "Day": 4
+    }
+  ],
+  "Words": [
+    {
+      "id": 1,
+      "eng": "english",
+      "kor": "영어",
+      "day": 1
+    },
+    {
+      "id": 2,
+      "eng": "car",
+      "kor": "자동차",
+      "day": 1
+    },
+    {
+      "id": 3,
+      "eng": "soldier",
+      "kor": "군인",
+      "day": 1
+    },
+    {
+      "id": 4,
+      "eng": "army",
+      "kor": "군대",
+      "day": 3
+    },
+    {
+      "id": 5,
+      "eng": "navy",
+      "kor": "해군",
+      "day": 2
+    },
+    {
+      "id": 6,
+      "eng": "airforce",
+      "kor": "공군",
+      "day": 2
+    },
+    {
+      "id": 7,
+      "eng": "rifle",
+      "kor": "소총",
+      "day": 2
+    },
+    {
+      "id": 8,
+      "eng": "gun",
+      "kor": "권총",
+      "day": 3
+    },
+    {
+      "id": 9,
+      "eng": "knife",
+      "kor": "칼",
+      "day": 3
+    },
+    {
+      "id": 10,
+      "eng": "run",
+      "kor": "뛰다",
+      "day": 2
+    },
+    {
+      "id": 13,
+      "eng": "wait",
+      "kor": "기다리다",
+      "day": 4
+    },
+    {
+      "id": 14,
+      "eng": "hold",
+      "kor": "잡다",
+      "day": 4
+    },
+    {
+      "id": 15,
+      "eng": "stop",
+      "kor": "정지",
+      "day": 4
+    },
+    {
+      "id": 16,
+      "eng": "hide",
+      "kor": "숨다",
+      "day": 4
+    }
+  ]
 }

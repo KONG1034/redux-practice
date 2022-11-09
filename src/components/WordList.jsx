@@ -1,22 +1,30 @@
 import { useParams } from "react-router";
-import GetDayWordList from "../Hooks/apis/GetDayWordList";
+import {useWord} from "../Hooks/apis/useWord";
 
-const WordList = () => {
+export const WordList = () => {
     const day = useParams();
-    console.log(day.day);
-    const WordList = GetDayWordList(day);
-    console.log(WordList);
-
+    const [WordList, deleteWord] = 
+        useWord(day);
+    
     return <>
         <h1>WordList</h1>
         <h3>Day {day.day}</h3>
 
-        {
-            WordList.map(wordlist => (
-                <p key={wordlist.id}>{wordlist.eng} {wordlist.kor}</p>
-            ))
-        }
+        <table>
+            <tbody>
+                {
+                    WordList.map(wordlist => (
+                        <tr key={wordlist.id}>
+                            <td><input type="checkbox"></input></td>
+                            <td>{wordlist.eng} {wordlist.kor}</td>
+                            <td><button onClick={() => {
+                                deleteWord(wordlist);
+                            }}>삭제</button></td>
+                            <td><button>수정</button></td>
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
     </>
 }
-
-export default WordList;

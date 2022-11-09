@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import WordList from './components/WordList';
+import {WordList} from './components/WordList';
 
 function App() {
   return (

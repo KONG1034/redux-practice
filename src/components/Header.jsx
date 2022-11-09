@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import GetAllDays from "../Hooks/apis/GetAllDays";
+import useAllDay from "../Hooks/apis/useAllDay";
 import SelectDayNav from "../Hooks/SelectDayNav";
 import WordList from "./WordList";
 
 
 const Header = () => {
     const navigate = useNavigate();
-    const days = GetAllDays('/days');
+    const days = useAllDay('/days');
 
     const selectDay = (e) => {
         navigate(`/${Number(e.target.value)}`);
