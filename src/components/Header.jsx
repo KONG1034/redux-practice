@@ -1,5 +1,6 @@
+import Select from 'react-select';
 import { useNavigate } from "react-router-dom";
-import useAllDay from "../Hooks/apis/useAllDay";
+import {useAllDay} from "../Hooks/apis/useAllDay";
 
 
 const Header = () => {
@@ -7,18 +8,12 @@ const Header = () => {
     const days = useAllDay('/days');
 
     const selectDay = (e) => {
-        navigate(`/${Number(e.target.value)}`);
+        navigate(`/${Number(e.value)}`);
     }
 
     return <>
         <h1>단어장</h1>
-        <select onChange={selectDay}>
-            {
-                days.map(day => (
-                    <option key={day.id} defaultValue={1} value={day.Day}>{day.Day}</option>
-                ))
-            }
-        </select>
+        <Select options={days} onChange={selectDay}></Select>
     </>
 }
 export default Header;

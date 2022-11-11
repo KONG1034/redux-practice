@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-const useAllDay = (url) => {
+export const useAllDay = (url) => {
     let [data, setData] = useState([]);
 
     useEffect(() => {
@@ -16,5 +16,3 @@ const useAllDay = (url) => {
     
     return data;
 }
-
-export default useAllDay;
