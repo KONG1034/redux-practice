@@ -1,7 +1,9 @@
 import { useParams } from "react-router";
+import { useNavigate } from "react-router-dom";
 import {useWord} from "../Hooks/apis/useWord";
 
 export const WordList = () => {
+    const navigate = useNavigate();
     const day = useParams();
     const [WordList, deleteWord] = 
         useWord(day);
@@ -20,7 +22,9 @@ export const WordList = () => {
                             <td><button onClick={() => {
                                 deleteWord(wordlist);
                             }}>삭제</button></td>
-                            <td><button>수정</button></td>
+                            <td><button onClick={() => {
+                                navigate('/update', {state: wordlist});
+                            }}>수정</button></td>
                         </tr>
                     ))
                 }

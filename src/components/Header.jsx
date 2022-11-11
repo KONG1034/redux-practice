@@ -1,9 +1,5 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useAllDay from "../Hooks/apis/useAllDay";
-import SelectDayNav from "../Hooks/SelectDayNav";
-import WordList from "./WordList";
 
 
 const Header = () => {
