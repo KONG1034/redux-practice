@@ -10,16 +10,30 @@ export const WordList = (props) => {
     const day = useParams();
     const [WordList, deleteWord] = useWord(day);
     const [complete, setComplete] = useState(props.wordlist.checked);
+    const [show, setShow] = useState(props.wordlist.show);
     
+    const showWord = (wordlist) => {
+        setShow(!show);
+
+        axios.put(`http://localhost:3001/Words/${wordlist.id}`,{
+            ...wordlist,
+            show: !show
+        }).then(res => {
+            if(res.ok) {
+                setShow(!show);
+            };
+        })
+    }
+
     const checkWord = (wordlist, e) => {
         setComplete(!complete);
-        
+
         axios.put(`http://localhost:3001/Words/${wordlist.id}`,{
             ...wordlist,
             checked: !complete
         }).then(res => {
             if(res.ok) {
-                setComplete(!complete)
+                setComplete(!complete);
             };
         })
     }
@@ -29,7 +43,10 @@ export const WordList = (props) => {
             <td><input type="checkbox" checked={complete} onChange={(e) => {
                 checkWord(props.wordlist, e);
             }}></input></td>
-            <td>{props.wordlist.eng} {props.wordlist.kor}</td>
+            <td>{props.wordlist.eng} {show ? props.wordlist.kor : ''}</td>
+            <td><button onClick={() => {
+                showWord(props.wordlist);
+            }}>뜻 {show ? "숨기기" : "보기"} </button></td>
             <td><button onClick={() => {
                 deleteWord(props.wordlist);
             }}>삭제</button></td>
