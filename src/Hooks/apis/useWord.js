@@ -1,9 +1,7 @@
 import axios from "axios";
 import { useEffect,useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export const useWord = (day) => {
-    let navigate = useNavigate();
     let [data, setData] = useState([]);
 
     const deleteWord = (wordlist) => {

@@ -1,34 +1,41 @@
+import { useState } from "react";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
 import {useWord} from "../Hooks/apis/useWord";
+import  {useUpdateCheck}  from "../Hooks/apis/useUpdateCheck";
+import axios from "axios";
 
-export const WordList = () => {
+export const WordList = (props) => {
     const navigate = useNavigate();
     const day = useParams();
-    const [WordList, deleteWord] = 
-        useWord(day);
+    const [WordList, deleteWord] = useWord(day);
+    const [complete, setComplete] = useState(props.wordlist.checked);
     
-    return <>
-        <h1>WordList</h1>
-        <h3>Day {day.day}</h3>
+    const checkWord = (wordlist, e) => {
+        setComplete(!complete);
+        
+        axios.put(`http://localhost:3001/Words/${wordlist.id}`,{
+            ...wordlist,
+            checked: !complete
+        }).then(res => {
+            if(res.ok) {
+                setComplete(!complete)
+            };
+        })
+    }
 
-        <table>
-            <tbody>
-                {
-                    WordList.map(wordlist => (
-                        <tr key={wordlist.id}>
-                            <td><input type="checkbox"></input></td>
-                            <td>{wordlist.eng} {wordlist.kor}</td>
-                            <td><button onClick={() => {
-                                deleteWord(wordlist);
-                            }}>삭제</button></td>
-                            <td><button onClick={() => {
-                                navigate('/update', {state: wordlist});
-                            }}>수정</button></td>
-                        </tr>
-                    ))
-                }
-            </tbody>
-        </table>
+    return <>
+        <tr key={props.wordlist.id}>
+            <td><input type="checkbox" checked={complete} onChange={(e) => {
+                checkWord(props.wordlist, e);
+            }}></input></td>
+            <td>{props.wordlist.eng} {props.wordlist.kor}</td>
+            <td><button onClick={() => {
+                deleteWord(props.wordlist);
+            }}>삭제</button></td>
+            <td><button onClick={() => {
+                navigate('/update', {state: props.wordlist});
+            }}>수정</button></td>
+        </tr>
     </>
 }

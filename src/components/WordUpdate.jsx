@@ -16,13 +16,10 @@ export const WordUpdate = () => {
     const onsubmit = (e) => {
         e.preventDefault();
         
-        console.log(data);
         UseUpdateWord(data, state, navigate);
     }
     const changeWord = (e) => {
         const { name, value } = e.target;
-        console.log(name);
-        console.log(value);
 
         setData({
             ...data, // 기존의 data 객체를 복사한 뒤
