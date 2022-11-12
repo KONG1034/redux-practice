@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
 import {useWord} from "../Hooks/apis/useWord";
-import  {useUpdateCheck}  from "../Hooks/apis/useUpdateCheck";
 import axios from "axios";
 
 export const WordList = (props) => {

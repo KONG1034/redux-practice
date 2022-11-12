@@ -1,8 +1,11 @@
 import {WordList} from './WordList';
 import {useWord} from "../Hooks/apis/useWord";
 import { useParams } from "react-router";
+import { useNavigate } from "react-router-dom";
+
 
 export const Word = () => {
+    const navigate = useNavigate();
     const day = useParams();
     const [WordListFnc, deleteWord] = useWord(day);
 

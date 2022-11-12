@@ -1,6 +1,12 @@
 {
   "Days": [
     {
+      "id": 0,
+      "Day": "날짜를 선택해주세요. ",
+      "label": null,
+      "value": null
+    },
+    {
       "id": 1,
       "Day": 1,
       "label": 1,
@@ -27,116 +33,75 @@
   ],
   "Words": [
     {
-      "id": 1,
-      "eng": "english",
-      "kor": "영어",
-      "day": 1,
-      "checked": false,
-      "show": false
-    },
-    {
-      "id": 2,
-      "eng": "car",
-      "kor": "자동차",
-      "day": 1,
-      "checked": false,
-      "show": false
-    },
-    {
-      "id": 3,
-      "eng": "soldier",
-      "kor": "군인",
-      "day": 1,
-      "checked": false,
-      "show": false
-    },
-    {
-      "id": 4,
-      "eng": "army",
-      "kor": "군대",
-      "day": 3,
-      "checked": false,
-      "show": false
-    },
-    {
-      "id": 5,
-      "eng": "navy",
-      "kor": "해군",
-      "day": 2,
-      "checked": false,
-      "show": false
-    },
-    {
-      "id": 6,
-      "eng": "airforce",
-      "kor": "공군",
-      "day": 2,
-      "checked": false,
-      "show": false
-    },
-    {
-      "id": 7,
-      "eng": "rifle",
-      "kor": "소총",
-      "day": 2,
-      "checked": false,
-      "show": false
-    },
-    {
-      "id": 8,
       "eng": "king",
       "kor": "왕",
-      "day": 3,
+      "day": "2",
       "checked": false,
-      "show": false
+      "show": false,
+      "id": 1
     },
     {
-      "id": 9,
-      "eng": "kick",
-      "kor": "차다",
-      "day": 3,
+      "eng": "navy",
+      "kor": "해군,남색",
+      "day": "2",
       "checked": false,
-      "show": false
+      "show": false,
+      "id": 2
     },
     {
-      "id": 10,
       "eng": "power",
       "kor": "힘",
-      "day": 2,
+      "day": "2",
       "checked": false,
-      "show": false
+      "show": false,
+      "id": 3
     },
     {
-      "id": 13,
-      "eng": "wait",
-      "kor": "기다리다",
-      "day": 4,
+      "eng": "cat",
+      "kor": "고양이",
+      "day": "1",
       "checked": false,
-      "show": false
+      "show": false,
+      "id": 4
     },
     {
-      "id": 14,
-      "eng": "hold",
-      "kor": "잡다",
-      "day": 4,
+      "eng": "dog",
+      "kor": "개",
+      "day": "1",
       "checked": false,
-      "show": false
+      "show": false,
+      "id": 5
     },
     {
-      "id": 15,
-      "eng": "stop",
-      "kor": "정지",
-      "day": 4,
+      "eng": "sun",
+      "kor": "태양",
+      "day": "4",
       "checked": false,
-      "show": false
+      "show": false,
+      "id": 6
     },
     {
-      "id": 16,
-      "eng": "hide",
-      "kor": "숨다",
-      "day": 4,
+      "eng": "bear",
+      "kor": "곰",
+      "day": "3",
       "checked": false,
-      "show": false
+      "show": false,
+      "id": 7
+    },
+    {
+      "eng": "queen",
+      "kor": "여왕",
+      "checked": false,
+      "show": false,
+      "id": 8
+    },
+    {
+      "eng": "son",
+      "kor": "아들",
+      "day": "1",
+      "checked": false,
+      "show": false,
+      "id": 9
     }
   ]
 }
