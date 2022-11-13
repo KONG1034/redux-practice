@@ -14,12 +14,22 @@ export const Header = () => {
     }
 
     const createWord = () => {
-        navigate('/create');
+        navigate('/createWord');
+    }
+
+    const createDay = () => {
+        navigate('/createDay', {state: days});
+    }
+
+    const deleteDay = () => {
+        navigate('/deleteDay', {state: days});
     }
 
     return <>
         <h1>단어장</h1>
         <button onClick={createWord}>단어 추가</button>
+        <button onClick={createDay}>날짜 추가</button>
+        <button onClick={deleteDay}>날짜 삭제</button>
         <select ref={dayRef} onChange={selectDay} defaultValue={1}>
             {
                 days.map(day => (

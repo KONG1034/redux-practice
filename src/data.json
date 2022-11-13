@@ -13,12 +13,6 @@
       "value": 1
     },
     {
-      "id": 2,
-      "Day": 2,
-      "label": 2,
-      "value": 2
-    },
-    {
       "id": 3,
       "Day": 3,
       "label": 3,
@@ -102,6 +96,14 @@
       "checked": false,
       "show": false,
       "id": 9
+    },
+    {
+      "eng": "moon",
+      "kor": "달",
+      "day": "5",
+      "checked": true,
+      "show": false,
+      "id": 10
     }
   ]
 }
